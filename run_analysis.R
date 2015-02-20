@@ -1,4 +1,6 @@
 library(plyr)
+library(dplyr)
+
 
 #-------------Read in, label and combine the test set, test set activity data, test set subject data----
 test_set <- read.table("./UCI HAR Dataset/test/X_test.txt")
@@ -34,7 +36,7 @@ variables <- read.table("./UCI HAR Dataset/features.txt")
 filtered <- filter(variables, grepl("-mean()", V2, fixed = TRUE) | grepl("-std()", V2, fixed = TRUE))
 features_hash <- as.vector(filtered$V2)
 names(features_hash) <- unlist(lapply(filtered$V1, function(x) paste("V", x, sep="")))
-data_set <- rename(data_set, features_hash)
+data_set <- plyr:::rename(data_set, features_hash)
 
 
 #-------------Extract only the measurements on the mean and std for each measurement--------------------

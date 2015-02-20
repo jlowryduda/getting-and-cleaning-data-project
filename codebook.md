@@ -1,1 +1,3 @@
-what is in the other files and what they do, goes on github
+This directory contains the following files:
+* run_analysis.R
+* README.md

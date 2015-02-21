@@ -1,6 +1,11 @@
 # Getting and cleaning data - course project (Coursera)
 
-R script run_analysis.R manipulates UCI HAR Dataset. The dataset is available here: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip (accessed February 2015).The code assumes that the dataset directory is located within the working directory.
+The repo contains the following files:
+* run_analysis.R, which creates a tidy data set from UCI HAR dataset.
+* README.md, which explains the process in run_analysis.R
+* codebook.md, which contains descriptions of the data, the variables used, as well as their units.
+
+R script run_analysis.R manipulates UCI HAR Dataset. The dataset is available here: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip (accessed February 2015). The code assumes that the dataset directory is located within the working directory. 
 
 The script executes the following steps:
 
